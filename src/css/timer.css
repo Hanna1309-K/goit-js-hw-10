@@ -1,0 +1,143 @@
+ body {
+     font-family: "Montserrat", sans-serif;
+     background-color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     padding: 40px;
+ }
+
+ #datetime-picker {
+     width: 272px;
+     height: 40px;
+     padding: 8px 16px;
+     font-size: 16px;
+     border: 1px solid #808080;
+     border-radius: 4px;
+     background: #fff;
+     outline: none;
+     display: flex;
+     align-items: flex-start;
+     justify-content: flex-start;
+     flex-direction: row;
+     gap: 8px;
+ }
+
+
+ /* Розмір панелі */
+ .flatpickr-calendar {
+     width: 280px !important;
+     height: 352px !important;
+     background-color: #f0f0f0 !important;
+     border-radius: 8px;
+ }
+
+ /* Місяць і рік */
+ .flatpickr-current-month {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 4px 8px;
+ }
+
+ /* Dropdown для місяця */
+ .flatpickr-monthDropdown-months {
+     background-color: #e0e0e0;
+     border-radius: 4px;
+     padding: 2px 4px;
+ }
+
+ /* Рік */
+ .flatpickr-current-month input.cur-year {
+     width: 60px;
+     border-radius: 4px;
+     background-color: #e0e0e0;
+ }
+
+ /* Вибраний день */
+ .flatpickr-day.selected {
+     background-color: #3f8efc;
+     color: #fff;
+     border-radius: 50%;
+ }
+
+ /* Hover над днем */
+ .flatpickr-day:hover {
+     background-color: #cce4ff;
+ }
+
+ /* Сьогоднішній день */
+ .flatpickr-day.today {
+     border: 1px solid #3f8efc;
+     border-radius: 50%;
+ }
+
+ /* Час внизу */
+ .flatpickr-time {
+     border-top: 1px solid #c1c1c1;
+     padding: 16px 0px 0px;
+     width: 248px;
+     height: 36px;
+ }
+
+ button[data-start] {
+     border-radius: 8px;
+     padding: 8px 16px;
+     width: 75px;
+     height: 40px;
+     background: #6c8cff;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.04em;
+     color: #fff;
+     transition: background-color 0.3s ease;
+ }
+
+ button.start-btn:hover {
+     background: #6c8cff;
+     /* світліший синій при hover */
+ }
+
+ button.start-btn:disabled {
+     background: #cfcfcf;
+     /* сірий фон */
+     cursor: not-allowed;
+     /* курсор "заборонено" */
+     color: #989898;
+
+ }
+
+ .timer .value {
+     font-weight: 400;
+     font-size: 40px;
+     line-height: 1.2;
+     letter-spacing: 0.04em;
+     color: #2e2f42;
+ }
+
+ .timer {
+     display: flex;
+     gap: 24px;
+     /* ⬅️ відстань між DAYS / HOURS / MINUTES / SECONDS */
+     width: 346px;
+     height: 72px;
+     flex-direction: row;
+ }
+
+ .timer .field {
+     width: 55px;
+     height: 72px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     flex-direction: column;
+     gap: 0px;
+ }
+
+ .timer .lable {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.5;
+     color: #2e2f42;
+ }
