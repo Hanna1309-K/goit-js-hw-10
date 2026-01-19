@@ -1,0 +1,136 @@
+/* ------------------ Загальні стилі ------------------ */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    width: 360px;
+    height: 72px;
+}
+
+input[type="number"] {
+    padding: 8px 16px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    /* нормальний стан */
+    border-radius: 4px;
+    font-weight: 400 !important;
+    /* легкий шрифт завжди */
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42 !important;
+    /* колір цифр завжди */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+    /* прибираємо синю рамку браузера */
+}
+
+/* Hover — чорний бордер */
+input[type="number"]:hover {
+    border-color: #000 !important;
+}
+
+/* Пресет (синій бордер) */
+input[type="number"].preset {
+    border-color: #4E75FF !important;
+}
+
+/* Focus / активний стан — шрифт і колір не змінюються */
+input[type="number"]:focus,
+input[type="number"]:active {
+    font-weight: 400 !important;
+    color: #2e2f42 !important;
+    border-color: #4E75FF !important;
+    /* синій бордер при активності */
+    box-shadow: none !important;
+}
+
+fieldset.state {
+    display: flex;
+    width: 360px;
+    height: 78px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+}
+
+fieldset.state:hover {
+    border-color: #000 !important;
+}
+
+/* Кожна пара: button + текст */
+.state-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* відстань між кнопкою і назвою */
+    margin-left: 48px;
+    padding-bottom: 8px;
+    padding-top: 24px;
+}
+
+/* Кнопка (radio input) */
+.state-item input[type="radio"] {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #000;
+    /* пресет чорний */
+    border-radius: 50%;
+    accent-color: #4E75FF;
+    /* фон при виборі синій */
+    cursor: pointer;
+}
+
+/* Hover на radio */
+fieldset input[type="radio"]:hover {
+    border-color: #000;
+    /* чорний при hover */
+}
+
+/* Вибраний варіант */
+fieldset input[type="radio"]:checked {
+    background-color: #4E75FF;
+    /* синій фон */
+    border-color: #4E75FF;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    /* кнопка і текст на одній лінії */
+    gap: 8px;
+    /* відстань між кнопкою і текстом */
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2e2f42;
+}
+
+button[type="submit"] {
+    width: 360px;
+    height: 40px;
+    background: #4e75ff;
+    /* темний фон */
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background: #6c8cff;
+}

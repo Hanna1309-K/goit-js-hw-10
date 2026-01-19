@@ -18,18 +18,20 @@
         <input type="number" name="delay" required />
       </label>
 
-      <fieldset>
+      <fieldset class="state">
         <legend>State</legend>
-        <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
-        </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
-      </fieldset>
 
+        <div class="state-item">
+          <input type="radio" name="state" value="fulfilled" required />
+          <span>Fulfilled</span>
+        </div>
+
+        <div class="state-item">
+          <input type="radio" name="state" value="rejected" required />
+          <span>Rejected</span>
+        </div>
+        </div>
+      </fieldset>
       <button type="submit">Create notification</button>
     </form>
   </main>
